@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base</title>
+
+    <style>
+        body{
+        background-color: #721124;
+        color:#808080;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        }
+
+        h1 {
+        font-family: arial;
+        }
+
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.content {
+  max-width: 1400px;
+  margin: auto;
+  background: #FFF;
+  padding: 10px;
+
+
+    </style>
+</head>
+<body>
+<div class="content">
+<img src="static/slike/yeet2.png" width="1400" height="350">
+
+<nav>
+    <ul>
+        <li><a href="/">Početna</a></li>
+        <li><a href="/ponuda">Ponude</a></li>
+    </ul>
+</nav>
+
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>

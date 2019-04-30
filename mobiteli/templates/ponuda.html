@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Izaberite jednu od naših top ponuda!</h1>
+<hr>
+<form method="post" action="/naruci">
+    <input type="text" name="ime" placeholder="Unesite ime i prezime">
+    <br>
+
+    <input type="text" name="telefon" placeholder="Unesite broj telefona">
+    <br>
+
+    <input type="text" name="adresa" placeholder="Unesite adresu">
+    <br>
+
+    <select name="model">
+      <option value="Iphone X">Iphone X</option>
+      <option value="Samsung Galaxy S10">Samsung Galaxy S10</option>
+      <option value="OnePlus 6t">OnePlus 6t</option>
+      <option value="Huawei p20">Huawei p20</option>
+    </select>
+
+      <select name="tarifa">
+      <option value="M_TARIFA">M</option>
+      <option value="L_TARIFA">L</option>
+      <option value="XL_TARIFA">XL</option>
+    </select>
+    <br>
+
+    <button type="submit">Naruči!</button>
+    
+    <IMG src="static/slike/b.png" width="1400" >
+</form>
+
+{% endblock content %}
